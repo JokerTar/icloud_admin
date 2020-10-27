@@ -1,0 +1,34 @@
+/*timeline---201611---*/
+body {font:13px/1.5  tahoma,arial,'Hiragino Sans GB','Hiragino Sans GB W3','Microsoft Yahei',\5b8b\4f53;color: #000;margin: 0px; padding: 0px; background:#E3E4E9; min-width:1200px; }
+div,ul,li,h1,h2,h3,h4,h5,h6,img,p,dl,dt,dd,ol,th,td,img,span,a{margin: 0px;padding: 0px;}
+a {color: #000;text-decoration: none;}
+h1{font-size:16px;}h2,h3,h4{font-size:14px; font-weight: lighter;}h5,h6{font-size:12px;}
+.clearfix:after{clear:both;content:'.';display:block;font-size:0;line-height:0;visibility:hidden;height:0}
+.clearfix{*zoom:1;}
+.timeLine-wrapper{padding:0 20px; background:#fff;}
+.timeLine-area{ background:url(../img/time-line.png) repeat-y 150px 0; overflow:hidden; position:relative;}
+.timeLine-area .start{background:url(../img/timebg.png) no-repeat 0 -70px; width:70px; height:70px; margin-bottom:50px; margin-left:116px; cursor:pointer; -webkit-transition:all 0.3s linear; -moz-transition:all 0.3s linear; -o-transition:all 0.3s linear; transition:all 0.3s linear; position:relative; z-index:2;}
+.timeLine-area .start:hover{background-position:0 0;}
+.timeLine-area h2 { height:70px; font-size:14px; font-weight:normal; padding-left:10px;  margin-top:-90px;}
+.timeLine-area h2 a {color:#3186ea; display:inline-block; *display:inline; zoom:1; background:url(../img/icon08.png) no-repeat right 50%; padding-right:15px;}
+.timeLine-area h2 a:hover { text-decoration:none;}
+.mod-timeLine{padding-bottom:10px; width:100%;}
+.mod-timeLine .date { float:left; width:100px; text-align:left; padding-left:50px; padding-top:5px; color:#999; font:normal 22px/18px Arial;}
+.mod-timeLine .date span { display:block; color:#ccc; font-size:14px;}
+.mod-timeLine .nodecon{ float:left; padding-bottom:10px; zoom:1; position:relative;}
+.nodecon .circle{display:block; width:10px; height:10px; background:#fff; border-radius:50%; border:3px solid #3186ea; margin-top:3px; position:absolute; left:-7px; z-index:33; -webkit-transition:all 0.1s linear; -moz-transition:all 0.1s linear; -o-transition:all 0.1s linear; transition:all 0.1s linear;}
+.Tcompleted:hover .circle{border:7px solid #8ebdf3; margin-top:-2px; left:-11px; cursor:pointer; /*opacity:0.6; filter:alpha(opacity=60);*/}
+.Tcompleted .circle:hover{border:7px solid #8ebdf3; margin-top:-2px; left:-11px; cursor:pointer; /*opacity:0.6; filter:alpha(opacity=60);*/}
+.Tactive .circle{border:3px solid #fc9323;}
+.Tnotstart .circle{border:3px solid #cccccc;}
+.nodeconArea{ padding-left:35px;}
+.nodeconArea h4{font-size:16px; color:#333; line-height:24px;}
+.nodeconArea .nodetxt{position:relative; margin-top:10px;}
+.nodetxt .arrow{display:block; position:absolute; left:20px; top:-8px; width:0; height:0; border-left:10px solid #f2f2f2; border-right:8px solid transparent; border-bottom:8px solid transparent; border-top:8px solid transparent;}
+.nodetxt .txt{background:#f2f2f2; border-radius:3px; padding:8px 15px; font-size:14px; color:#555; line-height:22px; max-width:670px;}
+.Tnotstart .nodeconArea h4{color:#888;}
+.Tactivesecond .circle{width:10px; height:10px; background:#3186ea; border:none; border-radius:50%; left:-4px;}
+.Tactivesecond .nodetxt{margin-top:0px;}
+.Tactivesecond .arrow{display:block; position:absolute; left:-12px; top:5px; width:0; height:0; border-right:8px solid #f2f2f2; border-left:5px solid transparent; border-bottom:5px solid transparent; border-top:5px solid transparent;}
+.timeLine-area .end{background:#ccc; width:14px; height:14px; border-radius:50%; margin-left:144px;}
+

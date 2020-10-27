@@ -1,0 +1,27 @@
+const getters = {
+  sidebar: state => state.app.sidebar,
+  isCollapse: state => state.app.isCollapse,
+  sidebarMode: state => state.app.sidebarMode,
+  // leftSidebarRouters: state => state.app.leftSidebarRouters,
+  leftSidebarRouters: state => state.permission.leftSidebarRouters,
+  tabsSidebarRouters: state => state.permission.tabsSidebarRouters,
+  auditSidebarRouters: state => state.permission.auditSidebarRouters,
+  secondRoute: state => state.permission.selectRoute,
+  auditTabs: state => state.permission.auditTabs,
+  tabsActiveName: state => state.permission.tabsActiveName,
+  childRouters: state => state.app.childRouters,
+  size: state => state.app.size,
+  device: state => state.app.device,
+  showSideTool: state => state.app.showSideTool,
+  visitedViews: state => state.tagsView.visitedViews,
+  cachedViews: state => state.tagsView.cachedViews,
+  userInfo: state => state.user.userInfo,
+  token: state => state.user.token,
+  avatar: state => state.user.avatar,
+  name: state => state.user.name,
+  introduction: state => state.user.introduction,
+  roles: state => state.user.roles,
+  permission_routes: state => state.permission.routes,
+  errorLogs: state => state.errorLog.logs
+}
+export default getters
